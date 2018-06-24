@@ -1,0 +1,53 @@
+.projects{
+    height: 100vh;
+    .project-cont{
+        padding: $sectionPadding;
+    }
+    .sec-headline{
+        padding-left: 200px;
+    }
+    .links{
+        li.active > a{
+            color:$primary;
+        }
+        a{
+            color: $black;
+            display: block;
+            padding-bottom: 20px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .card{
+        &:hover .overlay{
+            display: flex;
+        }
+        .overlay{
+            animation: overlay 0.5s alternate ease-in-out ;
+            cursor: pointer;
+        }
+    }
+    .over-content{
+        i{
+            font-size: 20px;
+        }
+        h5{
+            font-weight: bold;
+        }
+        p{
+            color: $secondary;
+        }
+    }
+}
+/*=========== ANIMATION FOR OVERLAY ===========*/
+@keyframes overlay {
+    from{
+        perspective-origin: center;
+        transform: scale(0,0);
+    }
+    to{
+        transform: scale(1,1);
+
+    }
+}

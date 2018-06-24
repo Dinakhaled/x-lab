@@ -1,0 +1,135 @@
+*{
+    @include box(border-box);
+}
+body{
+    font-family: future,sans-serif;
+    line-height: 1.5;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+button,a{
+	color: $secondary;
+}
+hr{
+    border: 1px solid $primary !important;
+    width: 100px;
+    margin: 0px;
+}
+p{
+    color: $textColor;
+    font-size: 14px;
+}
+/*=========== SLIDER ===========*/
+.carousel-indicators{
+    margin-left: 0px;
+    right: 200px;
+    margin-bottom: 40px;
+    &>li{
+        @include borderRadius(50%);
+        width: 8px;
+        height: 8px;
+        margin-left: 15px;
+    }
+}
+/*=========== BIG OVERLAY ===========*/
+.header-bg{
+    &::before{
+        content: '';
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52, 46, 54, 0.9);   
+    }
+}
+/*=========== SECTIONS HEADLINE ===========*/
+.sec-headline{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+/*=========== OVERLAY ===========*/
+.overlay{
+    background: rgba(226, 219, 26, 0.9);
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    display: none;
+}
+.ser-content{
+    top: 0;
+    padding: $sectionPadding;
+}
+.sec-headline::after{
+    content: '';
+    display: block;
+    border: 12px solid rgba(5, 5, 5, 0.05);
+    width: 316px;
+    height: 192px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    left: 90px;
+}
+.sec-headline::before{
+    content: 'ABOUT';
+    display: block;
+    color: rgba(5, 5, 5, 0.05);
+    position: absolute;
+    top: 190px;
+    left: -200px;
+    font-size: 120px;
+    font-weight: bold;
+}
+.projects{
+    .sec-headline::after{
+        top: 100px;
+        left: 250px;
+    }
+    .sec-headline::before{
+        top: 350px;
+        left: -200px;
+        content: 'CREATIVE';
+    }
+}
+.cust-con::after{
+    @extend .sec-headline::after;
+    width: 430px;
+    left: 180px;
+    height: 250px;
+    border: 12px solid rgba(255, 255, 255, 0.1);    
+}
+.sh::after{
+    border: 12px solid rgba(255, 255, 255, 0.1);    
+
+}
+.sh::before{
+    color: rgba(255, 255, 255, 0.1);
+    
+}
+.cust-con::before{
+    @extend .sec-headline::before;
+    content: 'ANIMATION';
+    left: 0;
+    left: -600px;
+    top: -12%;
+    color: rgba(255, 255, 255, 0.1);
+    
+}
+.position-2{
+    overflow: hidden;
+}
+.position-2::before{
+    @extend .sec-headline::before;
+    z-index: 9999;
+    left: 250px;
+    top: 450px;
+    content: 'CREATIVE';
+
+    
+}

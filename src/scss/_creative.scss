@@ -1,0 +1,31 @@
+.creative{
+    height: 100vh;
+    position: relative;
+    padding: 600px 0;
+    @media (min-width:0px) and (max-width: 1400px){
+        padding: 400px 0;
+    }
+    .bg-creative{
+        @include backgroundImg("../../dist/images/about.jpg");
+        background-size: contain;
+        height: 100vh;
+        width: 100vw;
+    }
+    .position-1,.position-2{
+        position: absolute;
+    }
+    .position-1{
+        left: 10%;
+        z-index: 1;
+    }
+    .position-2{
+        right: 0px;
+    }
+    
+    .carousel-indicators {
+        right: 100px;
+        & > li.active{
+            background: $primary;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.services{
+    .header-bg{
+        @include backgroundImg("../../dist/images/services_bg.jpg");
+        height:115vh;   
+    }
+    
+    .service-p{
+        color: $gray;
+    }
+    .main-con{
+        background: rgba($color: $secondary, $alpha: 0.9);
+        padding: 60px 60px;
+        .services-icon{
+            font-size: 40px;
+        }
+        h6{
+            font-weight: bold;
+        }
+        .border-title{
+            padding-bottom: 10px;
+            border-bottom: 2px solid $primary;
+        }
+    }
+    .left-side{
+        padding-right: 60px;
+    }
+    .right-side{
+        right: 5%;
+    }
+}

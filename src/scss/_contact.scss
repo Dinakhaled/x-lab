@@ -1,0 +1,50 @@
+.contact{
+    .header-bg{
+        @include backgroundImg("../../dist/images/contact_bg.jpg");
+        height:100vh; 
+    }
+    .sec-headline{
+        margin-bottom: 150px;
+    }
+    .ser-content{
+        padding: 100px 0px;
+        height:100vh;         
+    }
+    form{
+        input,textarea,input:focus,textarea:focus{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $secondary;
+            border-radius: 0;
+            box-shadow: none;
+            color: $secondary;
+            margin-bottom: 40px;
+            transition: 0.8s all ease-in-out;
+            &::-webkit-input-placeholder{
+                color: $secondary;
+                font-size: 14px;
+            }
+            
+            
+        }
+        button{
+            border: 1px solid $textColor;
+            border-radius: 0;
+            padding: 6px 40px;
+            background: transparent;
+            &:hover{
+                background: $primary;
+                color:$black;
+            }
+            &:hover i {
+                color: $black !important;
+            }
+        }
+        .copy-right{
+            color: $gray;
+        }
+        input:focus,textarea:focus{
+            border-color: $primary;
+        }
+    }
+}

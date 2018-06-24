@@ -1,0 +1,72 @@
+// @media (min-width:0px) and (max-width: 575.98px) {
+    
+// }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 0px) and (max-width: 767.98px) {
+
+    .sec-headline::after,.sec-headline::before,.projects .sec-headline::after,.projects .sec-headline::before,.cust-con::after,.sh::after,.sh::before,.cust-con::before,.position-2::before{
+        display: none;
+    }
+    header .cust-nav{
+        width: 100vw;
+    }
+    .creative{
+        text-align: center;
+        padding-left: 0;
+    }
+    .creative .position-1{
+        left: 0px;
+        hr{
+            margin: 0 auto;
+        }
+    }
+    .services .main-con{
+        width: 100vw;
+        position: absolute;
+        top: -180px;
+        .row{
+            top: 18px;
+            position: relative;
+        }
+    }
+    .projects .sec-headline,.contact .sec-headline{
+        text-align: center;
+        padding-left: 0px;
+        margin: 0;
+    }
+    .projects .project-cont{
+        padding: 50px 0;
+    }
+    .contact .header-bg{
+        position: relative;
+        top: 1100px;
+    }
+    .contact .ser-content{
+        position: relative !important;
+        top: 330px;
+        width: 100vw !important;
+        overflow: hidden;
+    }
+    .sub-btn{
+        text-align: center !important;
+    }
+    .contact form input, .contact form textarea, .contact form input:focus, .contact form textarea:focus{
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
